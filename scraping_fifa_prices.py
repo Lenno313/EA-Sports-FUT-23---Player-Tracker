@@ -70,6 +70,4 @@ else:
 
 new_hist_df.to_csv(price_hist_path, index=False)
 
-# Next steps
-
 # Run this programm every hour automatically - to get a nice history
