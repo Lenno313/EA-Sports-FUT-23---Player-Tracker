@@ -38,6 +38,7 @@ As we got the data, we can start to create some graphics from it, first we maybe
 - daily graph (boxplots)
 
 ![hourly-graph](hourly-graph.png "Hourly")
+note: the time steps are not hours in the picture, because I didn't execute the scraping suitable
 
 ![daily-graph](daily-graph.png "Daily")
   
