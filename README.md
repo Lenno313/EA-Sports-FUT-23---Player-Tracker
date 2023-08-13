@@ -6,9 +6,10 @@ If you visit the FUTWIZ Website and choose a player the website tells you the cu
 ![FUTWIZ Website](futwiz-messi-page.PNG "FUTWIZ")
 
 For the URL of the player's website you just need:
-- the ID of the individual card
+- the base-URL (https://www.futwiz.com/en//fifa23/player/)
 - the first name of the player
 - the last name of the player
+- the ID of the individual card
   
 Example URL: https://www.futwiz.com/en//fifa23/player/lionel-messi/51
 
