@@ -1,4 +1,4 @@
-# EA Sports FUT 23 - Ü Tracker
+# EA Sports FUT 23 - Player-Tracker
  In this project, I will get and analyze the prices of given players from FUTWIZ
 
 If you visit the FUTWIZ Website and choose a player the website tells you the current price of the player:
@@ -27,3 +27,6 @@ Also, it appends the prices to the "price_history" which has the additional colu
 
 ![prices-history-csv](prices-history.png "Player history")
   
+Now the scraping is done and we are getting the data we need to analyze the trend of the price.
+To get a reasonable amount of data we have to make sure that the scraping is executed every hour
+
