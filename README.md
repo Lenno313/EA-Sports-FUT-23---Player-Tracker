@@ -1,7 +1,7 @@
 # EA Sports FUT 23 - Player-Tracker
- In this project, I will get and analyze the prices of given players from FUTWIZ
+ In this project, I will pull and analyze the prices of given players from the FUTWIZ-Website
 
-If you visit the FUTWIZ Website and choose a player the website tells you the current price of the player:
+If you visit the FUTWIZ Website and choose a player the website tells you the current lowest price of the player:
 
 ![FUTWIZ Website](futwiz-messi-page.PNG "FUTWIZ")
 
