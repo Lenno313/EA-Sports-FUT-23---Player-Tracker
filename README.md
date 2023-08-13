@@ -30,5 +30,13 @@ Also, it appends the prices to the "price_history" which has the additional colu
   
 Now the scraping is done and we are getting the data we need to analyze the trend of the price.
 To get a reasonable amount of data we have to make sure that the scraping is executed every hour
-
  
+# Visualization 
+
+As we got the data, we can start to create some graphics from it, first we maybe just want to see the history:
+- hourly graph (Bar-diagram)
+- daily graph (boxplots)
+
+![daily-graph](daily-graph.png "Hourly")
+![hourly-graph](hourly-graph.png "Daily")
+  
