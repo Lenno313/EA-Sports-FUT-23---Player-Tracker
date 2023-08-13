@@ -37,7 +37,7 @@ As we got the data, we can start to create some graphics from it, first we maybe
 - hourly graph (Bar-diagram)
 - daily graph (boxplots)
 
-![hourly-graph](hourly-graph.png "Daily")
+![hourly-graph](hourly-graph.png "Hourly")
 
-![daily-graph](daily-graph.png "Hourly")
+![daily-graph](daily-graph.png "Daily")
   
