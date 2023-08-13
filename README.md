@@ -10,7 +10,7 @@ For the URL of the player's website you just need:
 - the first name of the player
 - the last name of the player
   
-https://www.futwiz.com/en//fifa23/player/lionel-messi/51
+Example URL: https://www.futwiz.com/en//fifa23/player/lionel-messi/51
 
 So in the next step, I create a CSV-File with the players which I want to check the price from:
 
@@ -31,3 +31,4 @@ Also, it appends the prices to the "price_history" which has the additional colu
 Now the scraping is done and we are getting the data we need to analyze the trend of the price.
 To get a reasonable amount of data we have to make sure that the scraping is executed every hour
 
+ 
