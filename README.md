@@ -19,11 +19,11 @@ Now with the information about the player we can start the Web scraping:
 The first Python script pulls the prices of the players and put them into a DataFrame
 Then it saves the newest prices into the "current_prices.csv" file
 
-![current-prices-csv](current-prices.PNG "Player price")
+![current-prices-csv](current-prices.png "Player price")
 
 Also, it appends the prices to the "price_history" which has the additional columns:
 - Date
 - Time
 
-![prices-history-csv](player-history.PNG "Player history")
+![prices-history-csv](prices-history.png "Player history")
   
