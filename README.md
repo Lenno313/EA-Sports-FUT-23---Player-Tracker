@@ -9,6 +9,7 @@ For the URL of the player's website you just need:
 - the ID of the player
 - the first name of the player
 - the last name of the player
+  
 https://www.futwiz.com/en//fifa23/player/lionel-messi/51
 
 So in the next step, I create a CSV-File with the players which I want to check the price from:
