@@ -83,4 +83,5 @@ Also, in regard to investing in / trading with players, I want to calculate auto
 - the current profit (minus 5% EA taxes)
 - maybe some prediction when the best moment comes to sell
 - if the profit I hoped for is reached -> then sending me a message that I can sell the players and earn the profit
+  
 in the same time steps I execute the scraping.
