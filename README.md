@@ -2,26 +2,26 @@
  In this project, I will pull and analyze the prices of selectable players from the FUTWIZ-Website
 
 ## Scraping individual players
-If you visit the FUTWIZ Website and choose a player the website tells you the current lowest price of the player:
+If you visit the FUTWIZ Website and choose a player the website tells you the current lowest price the player is listed with:
 
 ![FUTWIZ Website](futwiz-messi-page.PNG "FUTWIZ")
 
 For the URL of the player's website you just need:
-- the base URL ("https://www.futwiz.com/en//fifa23/player/")
+- the base URL from FUTWIZ ("https://www.futwiz.com/en//fifa23/player/")
 - the first name of the player
 - the last name of the player
 - the ID of the individual card
   
 Example URL: https://www.futwiz.com/en//fifa23/player/lionel-messi/51
 
-So in the first step, I create a CSV-File with the players which I want to check the price from:
+In the first step, I create a CSV-File with the players which I want to check the price from:
 
 ![Player.csv](player-file.PNG "Player file")
 
-Now with the information about the player, we can start the Web scraping (scraping_fifa_prices.py):
+Now with the information about the player , we can start the Web scraping (scraping_fifa_prices.py):
 
-The first Python script pulls the prices of the players and put them into a DataFrame
-Then it saves the newest prices into the "current_prices.csv" file
+The first Python script takes the information about the players and create the URL of the player's page
+Then it pulls prices of the players and put them into a DataFrame and saves the newest prices into the "current_prices.csv" file
 
 ![current-prices-csv](current-prices.png "Player price")
 
@@ -34,8 +34,8 @@ Also, it appends the prices to the "price_history" which has the additional colu
 
 ## Scraping prices by rating
 
-FUTWIZ has another nice option:
-On the page with the URL "https://www.futwiz.com/en/lowest-price-ratings" you can see the lowest 10 prices by players with ratings from 82-99. These are important for SBCs and many of them have massive price fluctuations. That's why it's useful to look at them as well.
+FUTWIZ has another great option:
+On the page with the URL "https://www.futwiz.com/en/lowest-price-ratings" you can see the 10 lowest prices by players with ratings from 82-99. These are interesting player for SBCs and many of them have massive price fluctuations. That's why it's useful to look at them as well.
 
 ![rating-page](rating-page.png "Rating prices")
 
