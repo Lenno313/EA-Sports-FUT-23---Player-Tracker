@@ -63,8 +63,9 @@ To get a reasonable amount of data we have to make sure that the scraping is exe
 
 As we got the data, we can start to create some graphics from it, first we maybe just want to see the history (analyze.py):
 
-- hourly graph (Bar-diagram)
-- daily graph (boxplots)
+For example i created a
+- hourly graph (Bar-diagram - just to see the price evolution over time)
+- daily graph (boxplots - to see the days peaks and average)
 
 ![hourly-graph](hourly-graph.png "Hourly")
 note: the time steps are not hours in the picture, because I didn't execute the scraping suitable
