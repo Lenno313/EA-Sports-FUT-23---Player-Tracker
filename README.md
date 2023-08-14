@@ -48,7 +48,7 @@ Like I explained before with the individual players, I create a CSV File with th
 - Average (of the 10 lowest prices)
 
   I chose these columns, because especially if you look at higher ratings there are big differences between the lowest and highest of the 10 prices. So the pure average doesn't tell you the real situation. 
-  I chose to save the 3 lowest prices as their own, because there are moments when the lowest is insanely lower than the others, that's why I save 3 prices just to see if it's a realistic price for all the players with the rating or just a peak of one player.
+  I also save the 3 lowest prices as their own, because there are moments when the lowest is insanely lower than the others, that's why I save 3 prices just to see if it's a realistic price for all the players with the rating or just a peak of one player.
 
 ![ratings-csv](ratings-csv.png "Ratings")
 
