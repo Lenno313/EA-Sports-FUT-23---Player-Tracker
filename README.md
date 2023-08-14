@@ -31,8 +31,6 @@ Also, it appends the prices to the "price_history" which has the additional colu
 
 ![prices-history-csv](prices-history.png "Player history")
   
-Now the scraping is done and we are getting the data we need to analyze the trend of the price.
-To get a reasonable amount of data we have to make sure that the scraping is executed every hour
 
 ## Scraping prices by rating
 
@@ -51,6 +49,15 @@ Like I explained before with the individual players, I create a CSV File with th
 
   I chose these columns, because especially if you look at higher ratings there are big differences between the lowest and highest of the 10 prices. So the pure average doesn't tell you the real situation. 
   Also, there are moments when the lowest is much lower than the 9 other, that's why i save the 3 lowest to see if it's a realistic price for all the players with the rating or just a peak of one player.
+
+![ratings-csv](ratings-csv.png "Ratings")
+
+![current-ratings-prices-csv](ratings-csv.png "current prices by rating")
+
+![rating-prices-hist-csv](ratings-csv.png "Ratings history")
+
+  Now the scraping is done and we are getting the data we need to analyze the trend of the price.
+To get a reasonable amount of data we have to make sure that the scraping is executed in determined time steps: e.g. every hour
  
 # Visualization 
 
