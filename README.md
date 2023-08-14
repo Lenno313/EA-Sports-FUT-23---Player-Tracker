@@ -79,10 +79,10 @@ For example:
 - Is the price increasing over the last hours/days/weeks?
 - Is it frequently peaking up/down at some point in the week / at a day
 
-Also, in regard to investing in / trading with players, I want to calculate automatically  
+Also, in regard to investments in players, I want to calculate automatically  
 - the raw value of the players 
 - the current profit (including 5% EA taxes)
 - maybe some prediction when the best moment comes to sell
 - if the profit I hoped for is reached -> then send me a message that I can sell the players and earn the profit
   
-in the same time steps I execute the scraping.
+in the same time steps I execute the scraping using the current prices.
