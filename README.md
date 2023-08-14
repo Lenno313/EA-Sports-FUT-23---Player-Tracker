@@ -35,7 +35,7 @@ Also, it appends the prices to the "price_history" which has the additional colu
 ## Scraping prices by rating
 
 FUTWIZ has another nice option:
-On the page with the URL "https://www.futwiz.com/en/lowest-price-ratings" you can see the lowest 10 prices by players with ratings from 82-99. These are important for SBCs and many of them have massive price fluctuations, so it's useful to look at them as well.
+On the page with the URL "https://www.futwiz.com/en/lowest-price-ratings" you can see the lowest 10 prices by players with ratings from 82-99. These are important for SBCs and many of them have massive price fluctuations. That's why it's useful to look at them as well.
 
 ![rating-page](rating-page.png "Rating prices")
 
@@ -48,7 +48,7 @@ Like I explained before with the individual players, I create a CSV File with th
 - Average (of the 10 lowest prices)
 
   I chose these columns, because especially if you look at higher ratings there are big differences between the lowest and highest of the 10 prices. So the pure average doesn't tell you the real situation. 
-  Also, there are moments when the lowest is much lower than the 9 other, that's why i save the 3 lowest to see if it's a realistic price for all the players with the rating or just a peak of one player.
+  I chose to save the 3 lowest prices as their own, because there are moments when the lowest is insanely lower than the others, that's why I save 3 prices just to see if it's a realistic price for all the players with the rating or just a peak of one player.
 
 ![ratings-csv](ratings-csv.png "Ratings")
 
