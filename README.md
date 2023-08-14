@@ -52,9 +52,9 @@ Like I explained before with the individual players, I create a CSV File with th
 
 ![ratings-csv](ratings-csv.png "Ratings")
 
-![current-ratings-prices-csv](ratings-csv.png "current prices by rating")
+![current-ratings-prices](current-ratings-prices-csv.png "current prices by rating")
 
-![rating-prices-hist-csv](ratings-csv.png "Ratings history")
+![rating-prices-hist](rating-prices-hist-csv.png "Ratings history")
 
   Now the scraping is done and we are getting the data we need to analyze the trend of the price.
 To get a reasonable amount of data we have to make sure that the scraping is executed in determined time steps: e.g. every hour
