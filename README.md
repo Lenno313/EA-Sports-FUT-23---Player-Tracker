@@ -1,4 +1,4 @@
-# EA Sports FUT 23 - Player-Tracker
+# EA Sports FUT 23 - Player-Tracker for Trading
  In this project, I will pull and analyze the prices of selectable Fifa FUT23 players from the FUTWIZ-Website
 
 ## Scraping individual players
