@@ -20,7 +20,7 @@ In the first step, I create a CSV-File with the players which I want to check th
 
 Now with the information about the player , we can start the Web scraping (scraping_fifa_prices.py):
 
-The first Python script takes the information about the players and create the URL of the player's page
+The first Python script takes the information about the players and create the URL of the player's page.
 Then it pulls prices of the players and put them into a DataFrame and saves the newest prices into the "current_prices.csv" file
 
 ![current-prices-csv](current-prices.png "Player price")
