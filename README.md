@@ -1,6 +1,7 @@
 # EA Sports FUT 23 - Player-Tracker
  In this project, I will pull and analyze the prices of given players from the FUTWIZ-Website
 
+## Scraping individual players
 If you visit the FUTWIZ Website and choose a player the website tells you the current lowest price of the player:
 
 ![FUTWIZ Website](futwiz-messi-page.PNG "FUTWIZ")
@@ -32,6 +33,24 @@ Also, it appends the prices to the "price_history" which has the additional colu
   
 Now the scraping is done and we are getting the data we need to analyze the trend of the price.
 To get a reasonable amount of data we have to make sure that the scraping is executed every hour
+
+## Scraping prices by rating
+
+FUTWIZ has another nice option:
+On the page with the URL "https://www.futwiz.com/en/lowest-price-ratings" you can see the lowest 10 prices by players with ratings from 82-99. These are important for SBCs and many of them have massive price fluctuations, so it's useful to look at them as well.
+
+![rating-page](rating-page.png "Rating prices")
+
+Like I explained before with the individual players, I create a CSV File with the current prices and also create a history-file to see the trend of the price over time. But in this case I chose some different columns:
+- Date
+- Time
+- Lowest
+- 2nd-Lowest
+- 3rd-Lowest
+- Average (of the 10 lowest prices)
+
+  I chose these columns, because especially if you look at higher ratings there are big differences between the lowest and highest of the 10 prices. So the pure average doesn't tell you the real situation. 
+  Also, there are moments when the lowest is much lower than the 9 other, that's why i save the 3 lowest to see if it's a realistic price for all the players with the rating or just a peak of one player.
  
 # Visualization 
 
