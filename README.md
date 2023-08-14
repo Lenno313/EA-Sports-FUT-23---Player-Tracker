@@ -39,7 +39,7 @@ On the page with the URL "https://www.futwiz.com/en/lowest-price-ratings", you c
 
 ![rating-page](rating-page.png "Rating prices")
 
-As I explained before with the individual players, I create a CSV File with the current prices and also create a history file to see the trend of the price over time. But in this case, I chose some different columns:
+As I explained before with the individual players, firstly I create a CSV file with the ratings to check. Then the script creates a CSV File with the current prices and also a history file to see the trend of the price over time. But in this case, I chose some different columns:
 - Date
 - Time
 - Lowest
