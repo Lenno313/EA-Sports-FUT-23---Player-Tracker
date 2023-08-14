@@ -70,4 +70,17 @@ As we got the data, we can start to create some graphics from it, first we maybe
 note: the time steps are not hours in the picture, because I didn't execute the scraping suitable
 
 ![daily-graph](daily-graph.png "Daily")
-  
+
+### Next steps
+
+From here on I want to implement other methods to analyze the trend of the prices.
+For example:
+- Is the price increasing over last hours/days/weeks ?
+- Is it frequently peaking up/down at some point in the week / at a day
+
+Also, in regard to investing in / trading with players, I want to calculate automatically  
+- the raw value of the players 
+- the current profit (minus 5% EA taxes)
+- maybe some prediction when the best moment comes to sell
+- if the profit I hoped for is reached -> then sending me a message that I can sell the players and earn the profit
+in the same time steps I execute the scraping.
