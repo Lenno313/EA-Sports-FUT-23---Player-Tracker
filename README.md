@@ -52,7 +52,7 @@ Like I explained before with the individual players, I create a CSV File with th
 
 ![ratings-csv](ratings-csv.png "Ratings")
 
-![current-ratings-prices](current-ratings-prices-csv.png "current prices by rating")
+![current-ratings-prices](current-rating-prices-csv.png "current prices by rating")
 
 ![rating-prices-hist](rating-prices-hist-csv.png "Ratings history")
 
