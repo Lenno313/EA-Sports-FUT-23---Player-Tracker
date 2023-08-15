@@ -3,7 +3,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 cur_price_path = "current_prices.csv"
-hist_price_path = "prices_history.csv"
+hist_price_path = "player_prices_history.csv"
 
 cur_df = pd.read_csv(cur_price_path)
 hist_df = pd.read_csv(hist_price_path)
