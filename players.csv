@@ -1,4 +1,4 @@
-Firstname,Lastname,ID
-lionel,messi,51
-harry,kane,41
-robert,glatzel,8083
+ID,Firstname,Lastname,Amount,CostPP
+51,lionel,messi,2,25000
+41,harry,kane,3,11000
+8083,robert,glatzel,5,300

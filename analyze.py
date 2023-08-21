@@ -1,7 +1,82 @@
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
+from os.path import exists
 
+players_path = "players.csv"
+ratings_path = "ratings.csv"
+player_history_path = "player_history.csv"
+rating_history_path = "rating_history.csv"
+
+player_df = pd.read_csv(players_path)
+ratings_df = pd.read_csv(ratings_path)
+player_history_df = pd.read_csv(player_history_path)
+rating_history_df = pd.read_csv(rating_history_path)
+
+with open("status.txt", "w") as file:
+    file.write("Investitionen in Spieler")
+    output = ""
+    profit_all = 0.0
+    value_all = 0.0
+    for id in player_df["ID"].unique():
+        cost_data = player_df[player_df["ID"] == id]
+        firstname = cost_data["Firstname"].iloc[0]
+        lastname = cost_data["Lastname"].iloc[0]
+        current_data = player_history_df[player_history_df["ID"] == id]
+
+        amount = cost_data["Amount"].iloc[0]
+        cost_pp = cost_data["CostPP"].iloc[0]
+        cost = amount * cost_pp
+        current_price = current_data.iloc[0]["Price"]
+        current_value = current_price * amount * 0.95
+        value_all += current_value
+        profit = current_value - cost
+        profit_all += profit
+
+        line1 = firstname[0].upper() + firstname[1::] + " " + lastname[0].upper() + lastname[1::] + ":"
+        line2 = "Anzahl: " + amount.astype(str) + " | Preis pro Spieler: " + cost_pp.astype(str) + " | Kosten gesamt: " + cost.astype(str)
+        line3 = "Aktueller Preis: " + current_price.astype(str) + " | Wert gesamt: " + current_value.astype(str)
+        line4 = "Aktueller Profit / Verlust: " + profit.astype(str)
+        output = "\n \n" + line1 + "\n" + line2 + "\n" + line3 + "\n" + line4
+
+        file.write(output)
+
+    file.write("\n \n" + "Investitionen in Rating")
+
+    for rating in ratings_df["Rating"]:
+        cost_data = ratings_df[ratings_df["Rating"] == rating]
+        current_data = rating_history_df[rating_history_df["Rating"] == rating]
+
+        amount = cost_data["Amount"].iloc[0]
+        cost_pp = cost_data["CostPP"].iloc[0]
+        cost = amount * cost_pp
+        current_price = current_data.iloc[0]["2nd-Lowest"]
+        current_value = current_price * amount * 0.95
+        value_all += current_value
+        profit = current_value - cost
+        profit_all += profit
+
+        line1 = str(rating) + "er"
+        line2 = "Anzahl: " + amount.astype(str) + " | Preis pro Spieler: " + cost_pp.astype(str) + " | Kosten gesamt: " + cost.astype(str)
+        line3 = "Aktueller Preis (2.niedrigster): " + current_price.astype(str) + " | Wert gesamt: " + current_value.astype(str)
+        line4 = "Aktueller Profit / Verlust: " + profit.astype(str)
+        output = "\n \n" + line1 + "\n" + line2 + "\n" + line3 + "\n" + line4
+
+        file.write(output)
+    file.write("\n \n \n" + "AKTUELLER PROFIT INSGESAMT: " + profit_all.astype(str) + "\n")
+    file.write("AKTUELLER WERT INSGESAMT: " + value_all.astype(str) + "\n")
+
+
+
+
+
+
+
+
+
+
+
+"""
 cur_price_path = "current_prices.csv"
 hist_price_path = "player_prices_history.csv"
 
@@ -58,3 +133,5 @@ for id in hist_df["ID"].unique():
     # Is the price increasing or decreasing ?
     # View the last hours, days & weeks
     # 24 hours -> count the "ups" & downs and look at the start / end
+
+"""

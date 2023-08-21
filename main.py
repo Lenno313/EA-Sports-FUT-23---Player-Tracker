@@ -28,6 +28,7 @@ def main():
     Helper.createNewHistory(player_prices_df, player_history_path)
     Helper.createNewHistory(rating_prices_df, rating_history_path)
 
+    # check config: what the Analyzer analyze ?
 
 # Run main method
 main()
