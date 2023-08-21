@@ -28,15 +28,15 @@ with open("status.txt", "w") as file:
         cost_pp = cost_data["CostPP"].iloc[0]
         cost = amount * cost_pp
         current_price = current_data.iloc[0]["Price"]
-        current_value = current_price * amount * 0.95
+        current_value = current_price * amount
         value_all += current_value
-        profit = current_value - cost
+        profit = current_value * 0.95 - cost
         profit_all += profit
 
         line1 = firstname[0].upper() + firstname[1::] + " " + lastname[0].upper() + lastname[1::] + ":"
         line2 = "Anzahl: " + amount.astype(str) + " | Preis pro Spieler: " + cost_pp.astype(str) + " | Kosten gesamt: " + cost.astype(str)
-        line3 = "Aktueller Preis: " + current_price.astype(str) + " | Wert gesamt: " + current_value.astype(str)
-        line4 = "Aktueller Profit / Verlust: " + profit.astype(str)
+        line3 = "Aktueller Preis: " + current_price.astype(str) + " | Wert gesamt (brutto): " + current_value.astype(str)
+        line4 = "Aktueller Profit / Verlust (netto): " + profit.astype(str)
         output = "\n \n" + line1 + "\n" + line2 + "\n" + line3 + "\n" + line4
 
         file.write(output)
@@ -51,15 +51,15 @@ with open("status.txt", "w") as file:
         cost_pp = cost_data["CostPP"].iloc[0]
         cost = amount * cost_pp
         current_price = current_data.iloc[0]["2nd-Lowest"]
-        current_value = current_price * amount * 0.95
+        current_value = current_price * amount
         value_all += current_value
-        profit = current_value - cost
+        profit = current_value * 0.95 - cost
         profit_all += profit
 
         line1 = str(rating) + "er"
         line2 = "Anzahl: " + amount.astype(str) + " | Preis pro Spieler: " + cost_pp.astype(str) + " | Kosten gesamt: " + cost.astype(str)
-        line3 = "Aktueller Preis (2.niedrigster): " + current_price.astype(str) + " | Wert gesamt: " + current_value.astype(str)
-        line4 = "Aktueller Profit / Verlust: " + profit.astype(str)
+        line3 = "Aktueller Preis (2.niedrigster): " + current_price.astype(str) + " | Wert gesamt (brutto): " + current_value.astype(str)
+        line4 = "Aktueller Profit / Verlust (netto): " + profit.astype(str)
         output = "\n \n" + line1 + "\n" + line2 + "\n" + line3 + "\n" + line4
 
         file.write(output)

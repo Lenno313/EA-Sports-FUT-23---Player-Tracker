@@ -2,35 +2,36 @@ Investitionen in Spieler
  
 Lionel Messi:
 Anzahl: 2 | Preis pro Spieler: 25000 | Kosten gesamt: 50000
-Aktueller Preis: 26500 | Wert gesamt: 50350.0
-Aktueller Profit / Verlust: 350.0
+Aktueller Preis: 26500 | Wert gesamt (brutto): 53000
+Aktueller Profit / Verlust (netto): 350.0
  
 Harry Kane:
 Anzahl: 3 | Preis pro Spieler: 11000 | Kosten gesamt: 33000
-Aktueller Preis: 17000 | Wert gesamt: 48450.0
-Aktueller Profit / Verlust: 15450.0
+Aktueller Preis: 17000 | Wert gesamt (brutto): 51000
+Aktueller Profit / Verlust (netto): 15450.0
  
 Robert Glatzel:
 Anzahl: 5 | Preis pro Spieler: 300 | Kosten gesamt: 1500
-Aktueller Preis: 450 | Wert gesamt: 2137.5
-Aktueller Profit / Verlust: 637.5
+Aktueller Preis: 450 | Wert gesamt (brutto): 2250
+Aktueller Profit / Verlust (netto): 637.5
  
 Investitionen in Rating
  
 84er
 Anzahl: 10 | Preis pro Spieler: 2000 | Kosten gesamt: 20000
-Aktueller Preis (2.niedrigster): 2000.0 | Wert gesamt: 19000.0
-Aktueller Profit / Verlust: -1000.0
+Aktueller Preis (2.niedrigster): 2000.0 | Wert gesamt (brutto): 20000.0
+Aktueller Profit / Verlust (netto): -1000.0
  
 86er
 Anzahl: 10 | Preis pro Spieler: 8000 | Kosten gesamt: 80000
-Aktueller Preis (2.niedrigster): 5000.0 | Wert gesamt: 47500.0
-Aktueller Profit / Verlust: -32500.0
+Aktueller Preis (2.niedrigster): 5000.0 | Wert gesamt (brutto): 50000.0
+Aktueller Profit / Verlust (netto): -32500.0
  
 89er
 Anzahl: 5 | Preis pro Spieler: 10000 | Kosten gesamt: 50000
-Aktueller Preis (2.niedrigster): 11000.0 | Wert gesamt: 52250.0
-Aktueller Profit / Verlust: 2250.0
+Aktueller Preis (2.niedrigster): 11000.0 | Wert gesamt (brutto): 55000.0
+Aktueller Profit / Verlust (netto): 2250.0
+ 
  
 AKTUELLER PROFIT INSGESAMT: -14812.5
-AKTUELLER WERT INSGESAMT: 219687.5
+AKTUELLER WERT INSGESAMT: 231250.0
